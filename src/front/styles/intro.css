@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700');
+
+.textos {
+    margin: 0;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.texto-1 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease;
+}
+
+.text-inicial {
+    font-family: "News Cycle", sans-serif;
+    color: #4bd5ee;
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+.texto-2 {
+    position: absolute;
+    top: 50%; /* Ajusta según necesites para centrar verticalmente */
+    left: 50%; /* Ajusta según necesites para centrar horizontalmente */
+    transform: translate(-50%, -50%);
+    font-family: "News Cycle", sans-serif;
+    font-weight: 700;
+    color: #ff6;
+    text-align: center;
+    letter-spacing: .1em;
+    line-height: 1.1em;
+    z-index: 1;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.botón {
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.crawl-text {
+    opacity: 1;
+    animation: crawl 10s linear infinite;
+}
+
+@keyframes crawl {
+    0% {
+        transform: translateY(100%);
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.hide {
+    opacity: 0 !important;
+}

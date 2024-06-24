@@ -15,6 +15,7 @@ export const Navbar = () => {
       <div class="navbar-nav">
         <a className="nav-link active" aria-current="page" href="#">Home</a>
         <a href="/" className="li-logo"><img src={logo} className="navbar-brand logo col-sm-4 " ></img></a>
+        <Link to="../pages/nosotros">Quienes somos</Link>
         <a className="color-link" href="#">¿Quienes somos?</a>
         <a className="color-link" href="#" >¿Donde hemos estado?</a>
         <a className="color-link" href="#" >¿Que estamos jugando actualmente?</a>
